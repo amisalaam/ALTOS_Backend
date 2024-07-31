@@ -9,7 +9,7 @@ from .models import UserAccount, OTP
 
 class UserRegistrationAPIView(APIView):
     def post(self, request, *args, **kwargs):
-        print(request  ,'bbbbbbbbbb')
+        print(request.data ,'bbbbbbbbbb')
         serializer = UserAccountSerializer(data=request.data)
         if serializer.is_valid():
             user = serializer.save()
