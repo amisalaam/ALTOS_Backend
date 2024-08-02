@@ -20,8 +20,8 @@ Follow these steps to set up the project on your local machine:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/event-management-system.git
-   cd event-management-system
+   git clone https://github.com/amisalaam/ALTOS_Backend.git
+   cd ALTOS_Backend
    ```
 
 2. **Create and activate a virtual environment:**
@@ -123,18 +123,3 @@ event-management-system/
 │   └── ...
 └── ...
 ```
-
-## Contributing
-
-Contributions are welcome! Please create a pull request with your changes or open an issue to discuss a new feature or bug.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-*Developed with ❤️ by [Your Name](https://github.com/yourusername).*
-```
-
-You can copy and paste the entire content above into your `README.md` file. Be sure to replace placeholders like `yourusername` and `your_secret_key` with your actual details.
