@@ -9,7 +9,6 @@ from .models import UserAccount, OTP
 
 class UserRegistrationAPIView(APIView):
     def post(self, request, *args, **kwargs):
-        print(request.data ,'bbbbbbbbbb')
         serializer = UserAccountSerializer(data=request.data)
         if serializer.is_valid():
             user = serializer.save()
@@ -23,8 +22,7 @@ class UserRegistrationAPIView(APIView):
 
 
 class OTPVerificationAPIView(APIView):
-    def post(self, request, *args, **kwargs):
-        print(request.data ,'cccccccccc')
+    def post(self, request,):
         email = request.data.get('email')
         otp_code = request.data.get('otp')
 
@@ -46,7 +44,7 @@ class OTPVerificationAPIView(APIView):
 
 
 class LoginAPIView(APIView):
-    def post(self, request, *args, **kwargs):
+    def post(self, request,):
         serializer = LoginSerializer(data=request.data)
         if serializer.is_valid():
             tokens = serializer.save()

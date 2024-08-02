@@ -17,7 +17,6 @@ class EventListCreateAPIView(APIView):
         return Response(serializer.data)
 
     def post(self, request):
-        print(request.data)
         serializer = EventSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
@@ -28,7 +27,6 @@ class EventListCreateAPIView(APIView):
 
 class EventDetailAPIView(APIView):
     def get(self, request, pk):
-        print(pk)
         event = get_object_or_404(Event, pk=pk)
         serializer = EventSerializer(event)
         return Response(serializer.data)
@@ -50,7 +48,7 @@ class EventDetailAPIView(APIView):
 
 class RegisterEventAPIView(APIView):
     
-    def get(self, request, *args, **kwargs):
+    def get(self, request,):
         email = request.query_params.get('email')
         if not email:
             return Response({"detail": "Email parameter is required."}, status=status.HTTP_400_BAD_REQUEST)
@@ -68,7 +66,6 @@ class RegisterEventAPIView(APIView):
     
     
     def post(self, request, *args, **kwargs):
-        print(request.user, 'kkkkkkkk')
         serializer = RegistrationSerializer(data=request.data)
         if serializer.is_valid():
             event_id = serializer.validated_data['event_id']
