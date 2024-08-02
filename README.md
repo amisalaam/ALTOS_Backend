@@ -1,5 +1,5 @@
 
-# Event Management System
+# ALTOS Event Management System
 
 Welcome to the Event Management System! This project is a Django-based application that allows users to view, register, and manage events. Admin users can create, edit, and delete events, while regular users can register for events and view their registered events.
 
