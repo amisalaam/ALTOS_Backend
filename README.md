@@ -92,7 +92,6 @@ Access the Django admin panel at `http://127.0.0.1:8000/admin` to manage events 
 
 | Endpoint | Description | Method |
 | -------- | ----------- | ------ |
-
 | `/api/token/` | Obtain JWT token | POST |
 | `/api/token/refresh/` | Refresh JWT token | POST |
 | `/api/register/` | Register a new user | POST |
