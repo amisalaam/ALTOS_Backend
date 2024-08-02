@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import EventListCreateAPIView, EventDetailAPIView, RegisterEventAPIView
 
+
 urlpatterns = [
     # Event list and creation endpoint
     path('events/', EventListCreateAPIView.as_view(), name='events'),  # List all events or create a new event
