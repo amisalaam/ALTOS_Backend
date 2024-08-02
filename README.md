@@ -1,6 +1,5 @@
 
 
-```markdown
 # Event Management System
 
 Welcome to the Event Management System! This project is a Django-based application that allows users to view, register, and manage events. Admin users can create, edit, and delete events, while regular users can register for events and view their registered events.
@@ -13,15 +12,7 @@ Welcome to the Event Management System! This project is a Django-based applicati
 - **Email Notifications**: Sends confirmation emails upon registration.
 - **Responsive Design**: Mobile-friendly user interface.
 
-## Table of Contents
 
-- [Installation](#installation)
-- [Setup](#setup)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
